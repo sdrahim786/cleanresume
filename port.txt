@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Abdul Rahim - E-Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            scroll-behavior: smooth;
+            transition: background-color 0.5s ease-in-out;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #fff;
+        }
+        header {
+            background: linear-gradient(to right, #0073e6, #00aaff);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            font-size: 1.8em;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        nav {
+            background: #222;
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00aaff;
+            transform: scale(1.1);
+        }
+        #toggleMode {
+            cursor: pointer;
+            background: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            margin: 20px;
+        }
+        section {
+            padding: 60px;
+            background: white;
+            margin: 20px auto;
+            width: 85%;
+            max-width: 1000px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #0073e6;
+            text-align: center;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        ul li {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px;
+            background: #f8f8f8;
+            border-left: 5px solid #0073e6;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0073e6;
+            color: white;
+            font-size: 1.2em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            section {
+                width: 95%;
+                padding: 40px;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Syed Abdul Rahim</h1>
+        <p>Software Developer</p>
+        <button id="toggleMode">Toggle Dark Mode</button>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Dynamic software engineer with hands-on experience from CODESOFT, adept at developing robust web applications using HTML, CSS, and JavaScript...</p>
+    </section>
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Software Engineer Intern - CODESOFT (2023 - 2024)</h3>
+        <p>Developed web applications using HTML, CSS, and JavaScript technologies.</p>
+        <h3>Digital Marketing Intern - Hashpro Academy (2021 - 2022)</h3>
+        <p>Optimized website content for SEO and conducted market research.</p>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor of Computer Science - CSI Wesley Institute Of Engineering (2021 - 2025)</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Digital Marketing</li>
+            <li>SEO Optimization</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: sdrahim219@gmail.com</p>
+        <p>Phone: 9676989850</p>
+        <p>Location: LB Nagar, Hyderabad</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Syed Abdul Rahim | E-Resume</p>
+    </footer>
+    
+    <script>
+        document.getElementById('toggleMode').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
